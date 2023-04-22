@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulários html</title>
+	<style type="text/css">
+
+		
+			
+		
+		.formulário{
+			width: 50%;
+			display: ;
+
+
+		}
+		.formulário input, .formulário textarea{
+			width: 50%;
+			display:block ;
+			margin-bottom:10px ;
+
+		}
+		.formulário .botao{
+
+			width: 80px;
+			background-color: #04AA6D ;
+			color: #fff;
+			border: solid 1px #007148;		
+			padding: 5px 10px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.botao:hover{
+			background-color: #fff;
+			color: #04AA6D;
+
+		}
+
+		.formulário .checagem{
+			display: inline;
+			width: auto;
+		}
+		.marcacao{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+	 <form class="formulário">
+	 	<label>seu nome</label>
+	 	<input type="text" name="nome" placeholder="seu nome">
+
+	 	<label>seu E-mail</label>
+	 	<input type="email" name="email" placeholder="seu E-mail">
+
+	 	<input type="number" name="idade" placeholder="sua idade">
+
+	 	
+	  <label class="marcacao">
+	 	<input type="checkbox" value="HTML" name="cursos" class="checagem">
+		 HTML
+	  </label>
+
+	 	<label class="marcacao">
+	 	<input type="checkbox" value="PHP" name="cursos" class="checagem">
+	 	 PHP
+	 	</label>
+
+	 	<label class="marcacao">
+	 	<input type="checkbox" value="CSS" name="cursos" class="checagem">
+	     CSS
+	     </label>
+
+	     <div>
+	     	<label>
+	     		<input type="radio" name="genero" value="Feminino" class="checagem">
+	     		Feminino
+	     	</label>
+	     	<label>
+	     		<input type="radio" name="genero" value="Masculino" class="checagem">
+	     		Masculino
+	     	</label>
+
+	     	<label>
+	     	<input type="radio" name="genero" value="não binário" class="checagem">
+	     		não binário
+	     	</label>
+	     </div>
+
+	     <select name="turnos" class="marcacao">
+	<option class="corno">selecione o seu turno</option>
+	     	<option>Manhã</option>
+	     	<option>Tarde</option>
+	     	<option>Noite</option>
+	     </select>
+
+	   <label class="corno">Escreva sua mensagem:</label>
+	     <textarea name="mensagem" placeholder="sua mensagem"></textarea>
+
+
+
+
+	 	<input class="botao"type="submit" name="enviar">
+
+
+	 </form>
+
+
+
+</body>
+</html>

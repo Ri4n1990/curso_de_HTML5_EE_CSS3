@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body{margin: 0; font-family:arial, sans-serif ;}
+		.container{
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+
+	#topo{
+		background-color:#000 ;
+		color: #fff;
+		overflow: hidden;
+		padding: 15px 30px;
+	}	
+
+
+	.logo{
+		color: #fff;
+		font-size:52px ;
+		float:left ;
+	}
+	.menu{
+		float:right;
+	}
+	.menu li{
+		list-style-type: none;
+		display: inline-block;
+		padding: 5px 10px;
+	}
+	.menu li a{
+		color: white;
+		text-decoration: none;
+	}
+	.coluna{
+		width: 25%;
+		float: left;
+		padding: 0 15px;
+		box-sizing: border-box;
+		margin-bottom:25px ;
+	}
+	.coluna .imagem{
+		/*background-color: #ddd;*/
+		color: #fff;
+		text-align: center;
+		/*height: 200px;*/	
+	}
+	.coluna .imagem img{
+		width: 100%;
+		display:block ;
+		border: solid 1px #444;
+		max-height:149px ;
+	}
+	.coluna h3{
+		text-align: center;
+		color: #333;
+	}
+	.erro{
+		overflow: hidden;
+	}
+
+
+	</style>
+	<title>layout em colunas</title>
+</head>
+<body>
+		<header id="topo">
+			<div class="container">		
+			<div class="logo">
+				LOGO		
+			</div>
+			<nav class="menu">
+	<ul>
+	 <li><a href="#">início</a></li>
+	 <li><a href="#">empresa</a></li>
+	 <li><a href="#">contato</a></li>
+	</ul>
+			</nav>
+	</div>
+			
+		</header>
+
+		<section class="noticias">
+			<div class="container">
+			<!-- coluna1-->
+			<div class="erro">
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/capa-dash.png" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+			<!-- coluna2-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/capa-mautic-udemy.png" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+
+			<!-- coluna3-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/joomla.jpg" alt="capa">
+			</div>
+
+			<h3>titulo da notícia</h3>
+			</div>
+			<!-- coluna4-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/oc.jpg" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+		</div>
+		</div>
+	</section>
+			<!--parte2-->
+			<section class="noticias">
+				<div class="container">
+			<!-- coluna1-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/capa-dash.png" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+			<!-- coluna2-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/capa-mautic-udemy.png" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+
+			<!-- coluna3-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/joomla.jpg" alt="capa">
+			</div>
+
+			<h3>titulo da notícia</h3>
+			</div>
+			<!-- coluna4-->
+			<div class="coluna">
+			<div class="imagem">
+				<img src="imagens/oc.jpg" alt="capa">
+			</div>
+			<h3>titulo da notícia</h3>	
+			</div>
+          </div>
+			
+		</section>
+
+</body>
+</html>

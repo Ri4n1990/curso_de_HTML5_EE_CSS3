@@ -1,0 +1,225 @@
+<!DOCTYPE html
+<html>
+<head>
+	<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>trabalho do formulário</title>
+
+ <style type="text/css">
+ 	.formulario input{
+			display: block;
+			margin-bottom: 10px;
+		}
+		.obrigatorio{
+			color: red;
+		}
+		.formulario .escolha{
+			display: inline;	
+			
+		}
+		.capricho{
+			display: block;
+			margin-top: 7px;
+
+		}
+		.formulario .gambiara{
+			display: inline;
+			margin-left: 31px;
+
+		}
+		.formulario .maisgambiara{
+			display: inline;
+			margin-left: 54px;
+		}
+		.formulario .botao{
+			width: 100px;
+			margin-top: 15px;
+			background-color:#1351b4 ;
+			color: white;
+			height: 40px;
+			border-radius: 50px;
+			cursor: pointer;
+		}
+		.botao:hover{
+			background-color: white;
+			color: blue;
+		}
+		.formulario .oi{
+			margin-top:10px ;
+		}
+		.cursor{
+			cursor:initial ;
+
+		}
+ </style>
+
+
+</head>
+<body>
+	   <form action="recebedados.php;" method="get"class="formulario">
+		<fieldset>
+
+		<legend><strong>Área"Dados Pessoais"</strong> </legend>
+
+	  <label> <strong>Nome completo</strong> <span class="obrigatorio">*</span> 
+		</label>
+		<input class="cursor" required type="text" name="nome" placeholder="Campo obrigatório!">
+
+		<label> <strong>Gênero</strong> </label>
+		<div>
+		<label>
+		<input type="radio" name="genero" value="masculino" class="escolha">
+		masculino
+		</label>
+
+	   <label> 
+	   	<input type="radio" name="genero" value="feminino" class="escolha">
+		feminino
+		</label>
+
+		<label>
+	   	<input type="radio" name="genero" value="prefiro não responder" class="escolha">
+		prefiro não responder
+		</label>
+		</div>
+		<label> <strong>Data de nascimento</strong> </label>
+		<input type="date" name="data do nascimento">
+
+		<label> <strong>E-mail</strong><span class="obrigatorio">*</span> </label>
+
+		<input type="email" name="email" placeholder="Campo obrigatório!">
+		
+		<label> <strong>URL site pessoal</strong> </label>
+		<input type="url" name="url">
+
+		<label> <strong>Endereço(Rua,número e complemento)</strong> <span class="obrigatorio">*</span> </label>
+
+		<input type="text" name="endereço" placeholder="Campo obrigatório!" required>
+
+		<label class="capricho"><strong>Cidade<span class="obrigatorio">*</span></strong></label>
+
+		<select required name="rio grande do sul">
+
+		<option value="">--selecione--<span>*</span></option>
+<optgroup label="Rio grande do sul">
+			<option>Alvorada</option>
+			<option>Canoas</option>
+			<option>Esteio</option>
+			<option>Gravataí</option>
+			<option>Novo Hamburgo</option>
+			<option>Passo fundo</option>
+			<option>Pelotas</option>
+			<option>Porto Alegre</option>
+			<option>São leopoldo</option>
+			</optgroup>
+			</select>
+			
+			<label class="capricho"> <strong>Telefone</strong></label>
+		   
+			<input type="tel" name="Telefone"placeholder="EX:(**)000000000">
+		
+		</fieldset>
+
+		<fieldset class="oi">
+       <legend><strong>Areá de "Dados profissionais"</strong> </legend>
+		
+     
+     <label class="capricho"> <strong>Áreas de atuação</strong> </label>
+
+		<label>
+	 	<input type="checkbox" value="" name="Desenvolvimento Front-end" class="escolha">
+	 	Desenvolvimento Front-end
+
+		 <input type="checkbox" name="Manutençao" class="escolha">
+		 Manutenção
+	  </label>
+	  
+		<label class="capricho">
+	 	<input type="checkbox" value="" name="Desenvolvimento Back-end" class="escolha">
+	 	Desenvolvimento Back-end	
+
+	 	<input type="checkbox" value="" name="Design" class="escolha">
+	 	Design	
+
+	  </label>
+
+	  
+	  <label class="capricho">
+	 	<input type="checkbox" value="" name="engenharia de software" class="escolha">
+	 	Engenharia de software
+
+	 	<input type="checkbox" value="" name="banco de dados" class="gambiara">
+	 	Banco de Dados
+	 	
+	 	
+	  </label>
+	  <label class="capricho">
+	  
+	  	<input type="checkbox" value="" name="Análise de negócios" class="escolha">
+	  	Análise de negócios
+
+	  	<input type="checkbox" value="" name="Análise de Dados" class="maisgambiara">
+	  	Análise de Dados
+	  </label>
+	 
+
+	 <label> <strong>Formação</strong> </label>
+	  <input list="formacao" type="list"name="formações">
+	  <datalist id="formacao">
+	  	<option>"Ensino Fundamental"</option>
+	  	<option>"Ensino Médio"</option>
+	  	<option>"Ensino Superior"</option>
+	  	<option>"Especialização"</option>
+	  	<option>"Mestrado"</option>
+	  	<option>Doutorado</option>
+	  </datalist>
+
+	  <label class="capricho"> <strong>Breve histórico profissional</strong> </label>
+	  <textarea name="histórico" placeholder="Escreva aqui">
+	  	
+	  </textarea>
+
+	  <label class="capricho"> <strong>Upload do currículo vitae</strong></label>
+	  <input type="file" name="curriculo">
+
+	 <label><strong>Disponibilidade de horas semanais</strong></label>
+
+     <select name="horas"class="capricho">
+	
+
+     <option value="">--Selecione--</option>	
+	 <option>"10"</option>
+	 <option>"20"</option>
+	 <option>"30"</option>
+	 <option>"40"</option>
+	 </select>
+	 </fieldset>
+
+<fieldset class="oi">
+	<legend><strong>Área de "Agendamento de entrevista"</strong>
+</legend>
+	<label><strong>Data<span class="obrigatorio">*</span></strong></label>
+
+	<input required type="date" name="data">
+
+	<label><strong>Horário<span class="obrigatorio">*</span></strong></label>
+	<input required type="time" name="horas">
+
+
+
+</fieldset>
+      <input class="botao" type="submit" name="enviar">
+      </fieldset>
+
+
+
+
+
+	</form>
+	
+	
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.principal{
+	background: #008AD4;
+}
+.titulo{
+	background-color: #fff;
+	color:#008AD4;
+	text-align:center ;
+	height:30px;
+	font-size: 23px;
+	;
+}
+	.especificaçoes{
+		height: 40px;
+		text-align: center;
+		background-color: #67B8FA;
+	}
+	.frutas{
+		background-color: #fff ;
+	}
+	.frutas2{
+		background-color:#67B8FA ;
+	}
+	.dinheiro{
+		background-color:#67B8FA;
+		text-align: right;
+	
+	}
+	.dinheiro2{
+		text-align: right;
+		background-color: #fff;
+	}
+	.dezena{
+		text-align: right;
+		background-color: #fff;
+	}
+	.dezena2{
+		background-color:#67B8FA ;
+		text-align: right;
+	}
+	.soma{
+		background-color: #fff;
+	}
+	.soma2{
+		background-color:#67B8FA ;
+	}
+	.rodapé{
+		background-color: #67B8FA;
+	}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conhecendo o CSS</title>
+	<!--<link type="text/css" href="estilo.css">-->
+	<style type="text/css">
+		/* nome_tag{ estilo: valor; } */
+		/* .nome_class{estilo: valor;} */
+		h2{
+			/*color: orange;*/
+			color: #7024FA;
+			font-size: 48px;				
+		}
+		.destaque{
+			color: #1983E3;
+			font-size: 32px;
+		}
+		.titulo{
+			font-size: 58px;
+		}
+		#subtitulo{
+			color: #ff6600;
+		}
+		.destaque strong{
+			color: red;
+		}
+		div .destaque{
+			color: red;
+		}
+		.nova h3{
+			color: orange;
+		}
+		.nova h3 strong{
+			color: green;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<!-- style=" CSS " -->
+	<h1 class="titulo" style="">Bem vindo ao meu site</h1>
+	<h2 id="subtitulo">Conhecendo o CSS</h2>
+
+	<p class="destaque">
+		<strong>CSS</strong> é uma linguagem de estilo.
+	</p>	
+	<p>
+		Uma <strong>excelente cantada</strong> para conquistar o seu Crush é chegar nele e dizer: Você é o CSS do meu HTML!
+	</p>
+
+	<div>
+		<h3 class="destaque"><strong>Bloco</strong> 1</h3>
+	</div>
+	<div class="nova">
+		<p>Teste</p>
+		<p>
+			<h3>Meu titulo de <strong>destaque</strong></h3>
+		</p>
+	</div>
+
+</body>
+</html>

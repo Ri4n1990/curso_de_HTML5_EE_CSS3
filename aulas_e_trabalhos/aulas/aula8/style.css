@@ -1,0 +1,97 @@
+body{font-size: 24px;}
+h2{	color: #333;margin: 0px;}
+a{text-decoration: none;}
+
+.noticia{
+	float: left;
+	width: 300px;
+	margin:20px;
+	/*border-color: #333;*/
+	/*border-width: 10px;*/
+	/*border-style: outset;*/
+	border: solid 4px #333;
+	/* solid - dashed - dotted - double */
+	/* groove - ridge - inset - outset */
+	/*border-top: solid #333 3px;
+	border-bottom: dashed #ccc 10px;
+	border-left: dotted #333 3px;
+	border-right: solid #333 3px;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding: 10px;
+	overflow: scroll;
+	/* auto - scroll - visible - hidden */
+	height: 200px;
+	
+	
+}
+.noticia p{
+	width: 340px;
+
+}
+
+.um{
+	position: absolute;
+	left: 10px;
+	top: 60px;
+	background-color: red;
+	z-index: 9;
+}
+.dois{
+	position: absolute;
+	left: 120px;
+	top: 80px;
+	background-color: blue;
+	z-index: 13;
+}
+.tres{
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	background-color: green;
+	z-index: 10;
+}
+
+
+.novidades{
+	border: solid 3px #444;
+	overflow: hidden;
+	position: relative;
+	height: 500px;
+}
+
+.enem{
+	padding: 0;
+	list-style-position: inside; /* inside - outside */
+	list-style-type: square;
+	/* disc, circle, square, decimal, lower-roman, upper-roman, 
+	lower-alpha, upper-alpha, none */
+	list-style-image: url(seta.png);
+
+}
+.senac{
+	list-style-type: upper-alpha ;
+}
+
+.container{
+	overflow:hidden;
+	width: 100%;
+}
+
+.whatsapp{
+	background: #3f923f;
+	color: #fff;
+	width: 450px;
+	border: solid 1px #333;
+	text-align: center;
+	position:fixed ;
+	top: ;
+	bottom: 15px;
+	left:;
+	right: 20px;
+}
+
+
+/* fixed - static - absolute - relative */

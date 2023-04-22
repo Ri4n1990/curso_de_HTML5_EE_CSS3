@@ -1,0 +1,41 @@
+body{
+	font-family: arial, sans-serif;
+	background-color: #f7f7f7;
+	background-image: url( ../imagens/et.png );
+	background-repeat: no-repeat; 
+	/* repeat-x - repeat-y - repeat - no-repeat*/
+	background-position: right center;
+	/* left - right -top -bottom - center*/
+	
+	
+}
+a{
+	text-decoration: none;
+}
+h1{
+	font-size: 48px;
+	font-family: tahoma, arial, sans-serif;
+	font-style: italic; /* italic - oblique - normal */
+	font-weight: 400; /* bold */
+	text-transform: uppercase; /* uppercase, lowercase, capitalize, none */
+	color: #ff6600;
+	text-decoration: underline;
+	/*underline, overline, line-through, blink, none */
+}
+p{
+	font-weight: bold; /* bold - bolder - números*/
+	text-transform: capitalize;
+	line-height: 16px ;
+}
+.coluna{
+	width: 80%;
+	height: 300px;
+	color: #fff; /* white */
+	background-color: #000;
+	background-image: url( ../imagens/alien.png );
+	background-repeat: no-repeat;
+	background-size: 100px ;
+	background-position: center center;
+
+
+}
